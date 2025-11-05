@@ -1,0 +1,63 @@
+/* General Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #4f46e5; /* Indigo */
+  transition: width 0.3s ease;
+}
+header nav a:hover::after,
+header nav a.active::after {
+  width: 100%;
+}
+
+/* Hero Animation */
+.hero-title {
+  animation: fadeInDown 1.2s ease;
+}
+.hero-subtitle {
+  animation: fadeInUp 1.2s ease;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card Hover Effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Enhancements */
+.btn {
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4); /* Indigo glow */
+}
+
+/* Footer */
+footer {
+  font-size: 0.95rem;
+}

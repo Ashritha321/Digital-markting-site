@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Marketing - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-indigo-600">Digital Marketing</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="active text-indigo-600 font-semibold">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <a href="index.html" class="block px-6 py-3 bg-indigo-50 font-semibold">Home</a>
+      <a href="services.html" class="block px-6 py-3 hover:bg-indigo-50">Services</a>
+      <a href="about.html" class="block px-6 py-3 hover:bg-indigo-50">About</a>
+      <a href="contact.html" class="block px-6 py-3 hover:bg-indigo-50">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Script for toggling menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold hero-title">Grow Your Business with Digital Marketing</h2>
+      <p class="mt-4 text-lg text-indigo-100 max-w-2xl mx-auto hero-subtitle">
+        We craft strategies that drive traffic, increase engagement, and boost your revenue through cutting-edge digital marketing solutions.
+      </p>
+      <div class="mt-6">
+        <a href="services.html" class="btn bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Explore Services</a>
+        <a href="contact.html" class="btn ml-4 border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-indigo-600">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Services Preview -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">What We Offer</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-6 bg-white border rounded-lg shadow">
+          <h4 class="text-xl font-semibold text-indigo-600">SEO Optimization</h4>
+          <p class="mt-2 text-gray-600">Boost search rankings and visibility with proven SEO techniques tailored for your business.</p>
+        </div>
+        <div class="card p-6 bg-white border rounded-lg shadow">
+          <h4 class="text-xl font-semibold text-indigo-600">Social Media Marketing</h4>
+          <p class="mt-2 text-gray-600">Build a loyal audience and maximize brand impact with targeted social media campaigns.</p>
+        </div>
+        <div class="card p-6 bg-white border rounded-lg shadow">
+          <h4 class="text-xl font-semibold text-indigo-600">Content Strategy</h4>
+          <p class="mt-2 text-gray-600">Engage customers with meaningful, creative, and conversion-focused content strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-gray-900 mb-12">What Our Clients Say</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-6 border rounded-lg shadow-md">
+          <p class="text-gray-600 italic">“Their SEO strategies helped us rank on Google within 3 months — amazing results!”</p>
+          <h4 class="mt-4 font-semibold text-indigo-600">— Sarah, Startup Founder</h4>
+        </div>
+        <div class="card p-6 border rounded-lg shadow-md">
+          <p class="text-gray-600 italic">“We saw a 200% boost in social engagement. They truly understand the digital space.”</p>
+          <h4 class="mt-4 font-semibold text-indigo-600">— Raj, E-commerce Owner</h4>
+        </div>
+        <div class="card p-6 border rounded-lg shadow-md">
+          <p class="text-gray-600 italic">“Professional, creative, and data-driven. Highly recommended!”</p>
+          <h4 class="mt-4 font-semibold text-indigo-600">— Emily, Marketing Director</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-indigo-600 text-white text-center">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold">Ready to Take Your Business to the Next Level?</h3>
+      <p class="mt-2 text-lg">Let’s create a custom digital marketing strategy for your success.</p>
+      <div class="mt-6">
+        <a href="contact.html" class="btn bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-bold text-white mb-4">Digital Marketing</h4>
+        <p class="text-sm">We provide innovative solutions to help businesses grow and thrive online.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
+          <li><a href="services.html" class="hover:text-indigo-400">Services</a></li>
+          <li><a href="about.html" class="hover:text-indigo-400">About</a></li>
+          <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+        <p>Email: info@digitalmarketing.com</p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+    </div>
+    <div class="mt-6 text-center text-gray-500 text-sm">
+      © 2025 Digital Marketing. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
